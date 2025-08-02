@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            ul {
+                width: 400px;
+                margin: auto;
+            }
+
+            li.one, li.two, li.three {
+                list-style: none;
+                /* width: 100%; */
+                margin: 20px 0px;
+                padding: 20px;
+                background-color: rgb(93%, 93%, 93%); /* Get The Background From Image */
+                color: black;
+            }
+            
+            ol li {
+                
+                padding: 10px;
+            }
+            ol.two li {
+                list-style: lower-roman;
+            }
+            ul li {
+                padding: 10px;
+            }
+    </style>
+
+</head>
+<body>
+
+
+
+<ul>
+
+    <li class="one">
+    HTML
+    <ol  start="10">
+        <li>Slim</li>
+        <li>Pugjs</li>
+        <li>HAML</li>
+    </ol>
+    </li>
+    
+    <li class="two">
+    CSS
+    <ol class="two" start="10">
+        <li>SASS</li>
+        <li>LESS</li>
+        <li>PostCSS</li>
+        </ol>
+    </li>
+
+    <li class="three">
+    JavaScript
+    <ul>
+            <li>Vuejs</li>
+            <li>Sveltejs</li>
+        </ul>
+    </li>
+
+</ul>
+    
+</body>
+</html>

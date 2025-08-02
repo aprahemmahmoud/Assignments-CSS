@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {
+        width: 100%; 
+        border-collapse: collapse;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #ccc;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    img.avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    .view {
+    background-color: #03A9F4;
+    }
+
+    .delete {
+    background-color: #E91E63;
+    }
+</style>
+
+</head>
+<body>
+    
+    <table>
+    <thead>
+    <tr>
+        <th>Avatar</th>
+        <th>Group</th>
+        <th>Name</th>
+        <th>Points</th>
+        <th>Control</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr >
+        <td><img class="avatar" src="../image/Screenshot from 2025-08-02 19-01-22.png" alt="avatar"></td>
+        <td>Ninja</td>
+        <td>Ahmed Mohamed</td>
+        <td>120</td>
+        <td>
+            <button class="btn view">View</button>
+            <button class="btn delete">Delete</button>
+        </td>
+    </tr>
+    <tr >
+        <td><img class="avatar" src="../image/Screenshot from 2025-08-02 19-01-22.png" alt="avatar"></td>
+        <td rowspan="2">Shades</td>
+        <td>Shady Nabil</td>
+        <td>180</td>
+        <td>
+            <button class="btn view">View</button>
+            <button class="btn delete">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td><img class="avatar" src="../image/image.png" alt="avatar"></td>
+        <td>Eman Mohamed</td>
+        <td>160</td>
+        <td>
+            <button class="btn view">View</button>
+            <button class="btn delete">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td><img class="avatar" src="../image/Screenshot from 2025-08-02 19-01-22.png" alt="avatar"></td>
+        <td rowspan="2">Valhala</td>
+        <td>Mohamed Ibrahim</td>
+        <td>190</td>
+        <td>
+            <button class="btn view">View</button>
+            <button class="btn delete">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td><img class="avatar" src="../image/image.png" alt="avatar"></td>
+        <td>Noor Atef</td>
+        <td>110</td>
+        <td>
+            <button class="btn view">View</button>
+            <button class="btn delete">Delete</button>
+        </td>
+    </tr>
+    <tr>  
+        <td><img class="avatar" src="../image/Screenshot from 2025-08-02 19-01-22.png" alt="avatar"></td>
+        <td>Union</td>
+        <td>Mahmoud Adel</td>
+        <td>90</td>
+        <td>
+            <button class="btn view">View</button>
+            <button class="btn delete">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
