@@ -7,6 +7,44 @@
 
     <style>
         
+        p {
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(94%, 94%, 94%);
+            border-left: 5px solid rgb(91%, 12%, 39%);
+            position: relative;
+        }
+
+        p::after {
+            position: absolute;
+            content: "";
+            top: center;
+            left: -15.5px;
+            width: 0px;
+            height: 0%;
+            /* background-color: rgb(91%, 12%, 39%); */
+            right: 0;
+            border-right: 10px solid rgb(91%, 12%, 39%);
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        p::before {
+            position: absolute;
+            content: attr(data-person);
+            top: 0;
+            left: -100px;
+            width: 80px;
+            height: 100%;
+            background-color: rgb(94%, 94%, 94%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
     </style>
 
 </head>
