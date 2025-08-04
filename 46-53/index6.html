@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-color: rgb(93%, 93%, 93%);
+            --main-padding:15px
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-between;;
+            width: 98%;
+            height: 98%;
+            /* background-color: var(--main-color); */
+            padding: var(--main-padding);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--main-padding);
+            height: 9%;
+        }
+        
+        ul {
+            display: flex;
+            list-style: none;
+            width: 90%;
+            justify-content: flex-end;
+            background-color: var(--main-color);
+        }
+
+        li {
+            padding: var(--main-padding);
+        }
+
+        .logo {
+            background-color: var(--main-color);
+            padding: var(--main-padding);
+            width: 8%;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 80%;
+            padding: var(--main-padding);
+        }
+        
+        main div {
+            width: calc((100% / 2) - 10px);
+            padding: var(--main-padding);
+            background-color: var(--main-color);
+
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            height: 9%;
+            background-color: var(--main-color);
+        }
+        
+        footer div {
+            display: flex;
+            align-content: center;
+            width: calc((100% / 2) - 20px);
+            align-items: center;
+            padding: var(--main-padding);
+        }
+
+        .copyright {
+            justify-content: flex-start;
+        }
+
+        .design {
+            justify-content: flex-end;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <section>
+
+        <nav>
+            <div class="logo">Logo</div>
+            <ul class="links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content">Content</div>
+            <div class="sidebar">Sidebar</div>
+        </main>
+
+        <footer>
+            <div class="copyright">Copyright 2021</div>
+            <div class="design">Designed By Elzero</div>
+        </footer>
+    </section>
+    
+</body>
+</html>
