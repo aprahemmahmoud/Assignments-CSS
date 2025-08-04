@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            display: flex;
+            width: 550px;
+            height: 550px;
+            margin: auto;
+            background-color: wheat;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.Free, div.pro {
+            width: 230px;
+            height: 320px;
+            background-color: rgb(93%, 93%, 93%);
+            margin: 10px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        div.Free::before, 
+        div.pro::before {
+            position: absolute;
+            content: attr(data-content);
+            display: grid;
+            border-radius: 50%;
+            background-color: rgb(87%, 87%, 87%);
+            top: 40%;
+            left: 25px;
+            height: 55%;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            font-size: 30px;
+            
+        }
+
+        
+        div.Free::after, 
+        div.pro::after {
+            position: absolute;
+            content: attr(data-product);
+            border-radius: 5px;
+            background-color: rgb(1%, 66%, 96%);
+            top: 10px;
+            left: 25px;
+            width: 20px;
+            text-align: center;
+            width: 80%;
+            font-size: 30px;
+        }
+
+
+        div.or {
+            height: 375px;
+            background-color: rgb(93%, 93%, 93%);
+            margin: 10px;
+            border: 2px solid rgb(1%, 66%, 96%);
+            border-radius: 10px;
+            position: relative;
+        }
+        div.or::after {
+            position: absolute;
+            content: "or";
+            border-radius: 50%;
+            background-color: rgb(1%, 66%, 96%);
+            top: 50%;
+            left: -10px;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <section>
+        <div data-product="Basic" data-content="Free" class="Free"></div>
+
+        <div class="or"></div>
+
+        <div data-product="Pro" data-content="$30" class="pro"></div>
+
+    </section>
+
+
+</body>
+</html>

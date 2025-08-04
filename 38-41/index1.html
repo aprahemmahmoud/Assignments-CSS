@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            display: grid;
+            background-color: rgb(93%, 93%, 93%);  
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 20px auto;
+            border: 3px solid black;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            box-shadow: 10px 10px 0px rgb(13%, 59%, 95%), -10px -10px 0px rgb(91%, 12%, 39%);
+            counter-increment: div;
+            position: relative;
+        }
+
+        div::after {
+            content: counter(div);
+            background-color: black;
+            width: 30px;
+            height: 30px;
+            color: white;
+            font-size: 20px;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+            top: -15px;
+            right: 40%;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+
+        <div>Element</div>
+        <div>Element</div>
+        <div>Element</div>
+
+</body>
+</html>

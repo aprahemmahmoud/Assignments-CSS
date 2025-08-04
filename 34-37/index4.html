@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            width: 400px;
+            height: 15px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(94%, 94%, 94%);
+            border-right: 5px solid rgb(96%, 26%, 21%);
+            position: relative;
+            counter-increment: p;
+        }
+
+        p::before {
+            display: grid;
+            position: absolute;
+            content:  counter(p);
+            height: 100%;
+            width: 40px;
+            background-color: rgb(96%, 26%, 21%);
+            color: white;
+            top: 0;
+            left: -40px;
+            text-align: center;
+            align-items: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+
+
+
+</body>
+</html>
