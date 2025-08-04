@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 400px;
+            margin: auto;
+            background-color: rgb(93%, 93%, 93%) !important;
+            color: transparent !important;
+            padding: 20px;
+            border: 1px solid transparent !important;
+            font-size: 20px !important;
+            text-align: center;
+            position: relative;
+        }
+
+        div::after {
+            position: absolute;
+            content: "Elzero";
+            color: black;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div style="
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border: 1px solid blue;
+    font-size: 80px;">
+    Hello Div
+    </div>
+
+</body>
+</html>
