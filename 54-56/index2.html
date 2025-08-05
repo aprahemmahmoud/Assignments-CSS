@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-evenly;
+            width: 600px;
+            height: 160px;
+            /* background-color: rgb(93%, 93%, 93%); */
+        }
+
+        label {
+            width: 100%;
+            height: calc((100%/3) - 30px);
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        input {
+            outline: none;
+            width: 100%;
+            border: none;
+            color: white;
+            height: calc((100%/3));
+            background-color: rgb( 93%, 93%, 93%);
+            padding: 15px;
+            caret-color: rgb(96%, 26%, 21%);
+            color: black;
+        }
+
+        label::after {
+            position:absolute;
+            content: "";
+            left: 0;
+            width: calc(100% + 30px);
+            height: 3px;
+            background-color: rgb( 91%, 12%, 39%);
+            background-image: linear-gradient(to right,rgb(96%, 26%, 21%)0%,rgb(96%, 26%, 21%) 50%,rgb(30%, 69%, 31%)50%,rgb(30%, 69%, 31%)100%);
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form action="">
+        <label for="">    
+            <input class="one" type="text" placeholder="one" name="one" value="Elzero">
+        </label>
+
+        <label for="">
+            <input class="two" type="text" placeholder="two" name="two">
+        </label>
+
+        <label for="">
+            <input class="three" type="text" placeholder="three" name="three">
+        </label>
+
+    </form>
+
+</body>
+</html>
