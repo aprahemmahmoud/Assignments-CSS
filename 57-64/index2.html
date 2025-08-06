@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .layout {
+            display: grid;
+            height: 100vh;
+            background-color: antiquewhite;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 50px auto 50px;
+            grid-template-areas: 
+            "head head head head head head head head head head"
+            "sctn sctn sctn sctn sctn sctn sctn sctn  asid asid"
+            "foot foot foot foot foot foot foot foot foot foot";
+        }
+        
+
+        header {
+            grid-area: head;
+            background-color: rgb(1%, 66%, 96%);
+        }
+
+        section {
+            grid-area: sctn;
+            background-color: rgb(100%, 34%, 13%);
+        }
+        
+        aside {
+            grid-area: asid;
+            background-color: rgb(38%, 49%, 55%);
+        }
+
+        footer {
+            grid-area: foot;
+            background-color: rgb(0%, 59%, 53%);
+        }
+        
+        header, section, aside, footer {
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="layout">
+        <header>header</header>
+        <section>section</section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+
+</body>
+</html>
