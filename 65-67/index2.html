@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(93%, 93%, 93%);
+            position: relative;
+            border-radius: 50%;
+        }
+
+
+        div::after {
+            content: "";
+            position: absolute;
+            width: calc(100% + 20px);   
+            height: calc(100% + 20px);
+            left: -20px;
+            z-index: -1;
+            border-radius: 50%;
+            border: 10px solid rgb(1%, 66%, 96%) ;
+            border-right: 10px solid transparent;
+            transition: .5s;
+            transition-delay: .5s;
+        }
+        
+        div::before {
+            content: "";
+            position: absolute;
+            width: calc(100%);
+            height: calc(100%);
+            left: -10px;
+            background-color: transparent;
+            z-index: -2;
+            border-radius: 50%;
+            border: 10px solid rgb(91%, 12%, 39%) ;
+            border-left: 10px solid transparent;
+            transition: .5s;
+        }
+
+        div:hover::before {
+            /* transform: rotate(360deg); */
+            animation-name: rotate;
+            animation-duration: 1s;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        div:hover::after {
+            /* transform: rotate(360deg); */
+            animation-name: rotate;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div>Hema</div>
+
+
+</body>
+</html>
