@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        :root {
+            --first-color: rgb(98%, 21%, 39%);
+            --second-color: rgb(10%, 57%, 96%);
+            --third-color: black;
+        }
+
+        span {
+            width: 50px;
+            height: 50px;
+            border: solid 5px var(--third-color);
+            background-color: rgb(85%, 85%, 100%);
+            border-radius: 50%;
+            border-left: 5px solid transparent;
+            position: relative;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }   
+    </style>
+
+</head>
+<body>
+    
+    <span></span>
+
+</body>
+</html>
