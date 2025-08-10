@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        :root {
+            --main-color: rgb(0%, 59%, 53%);
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 50px;
+            background-color: var(--main-color);
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            padding: 15px;
+            position: relative;           
+        }
+
+        div::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: var(--main-color);
+            z-index: -1;
+            transform: skew(20deg, 0deg) translate(-9px);
+        }
+
+        div::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 10%;
+            height: 100%;
+            background-color: var(--main-color);
+            z-index: -1;
+            transform: skew(20deg, 0deg) translate(-25px);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>Elzero</div>
+
+</body>
+</html>
