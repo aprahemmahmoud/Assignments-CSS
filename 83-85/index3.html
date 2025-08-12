@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            height: 100vh;
+            flex-flow: wrap;
+            gap: 20px;
+        }
+
+        :root {
+            --first-color: rgb(6%, 61%, 56%);
+            --second-color: red;
+            --third-color: black;
+        }
+
+        div {
+            width: 95%;
+            background-color: rgb(93%, 93%, 93%);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: self-start;
+            height: 100px;
+            position: relative;
+            font-size: 20px;
+            font-weight: bolder;
+            color: var(--first-color);
+        }
+
+        .two {
+            width: calc((100% / 2) - 50px);
+        }
+
+        div::after {
+            content: "This is a product";
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            transform: translateY(100%) translateX(-10px);
+            color: black;
+            font-size: 16px;
+        }
+
+        @media (width < 1200px) {
+            div {
+                color: var(--second-color);
+            }
+            
+            .three {
+                width: calc((100% / 3) - 50px);
+            }
+        }
+
+        @media (width < 725px) {
+            .full-width {
+                color: var(--third-color);
+                width: calc(100% - 50px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="full-width">Product One</div>
+    <div class="full-width two three">Product Two</div>
+    <div class="full-width two three">Product Three</div>
+    <div class="full-width three">Product Four</div>
+
+</body>
+</html>
